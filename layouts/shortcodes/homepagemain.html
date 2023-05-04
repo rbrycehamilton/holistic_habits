@@ -1,0 +1,312 @@
+<!-- Variables -->
+{{ $slider_1_image := "/images/home-image-slider-1.jpg"}}
+{{ $slider_2_image := "/images/home-image-slider-2.jpg" }}
+{{ $slider_3_image := "/images/home-image-slider-3.jpg" }}
+{{ $section_2_image := "/images/headshot.jpg" }}
+{{ $section_3_image := "/images/our-services-image.jpg" }}
+{{ $testimonial_slider_image_1 := "/images/testimonials 1.jpg"}}
+{{ $testimonial_slider_image_2 := "/images/testimonials 2.jpg"}}
+{{ $testimonial_slider_image_3 := "/images/testimonials 3.jpg"}}
+{{ $staff_image_1 := "/images/Trainer-1.jpg" }}
+{{ $staff_image_2 := "/images/Trainer-2.jpg" }}
+{{ $staff_image_3 := "/images/Trainer-3.jpg" }}
+{{ $staff_image_4 := "/images/Trainer-4.jpg" }}
+<!-- Variables end -->
+
+<section>
+        <section>
+            <div class="swiper-container swiper-variant-1 bg-black">
+                <div class="swiper-wrapper text-center">
+                    <div class="swiper-slide overlay-5" data-slide-bg="{{$slider_1_image}}">
+                        <div class="swiper-slide-caption">
+                            <div class="container">
+                                <div class="row row-fix justify-content-md-center">
+                                    <div class="col-md-11 col-lg-10 col-xl-9">
+                                        <div class="shilder-header-with-divider" data-caption-animate="fadeInUp" data-caption-delay="0s">{{.Get `slider_1_text`}}</div>
+                                        <h2 class="slider-header" data-caption-animate="fadeInUp" data-caption-delay="100s">{{.Get `slider_1_text_2`}}<br>{{.Get `slider_1_text_3`}}</h2><a class="button button-icon button-icon-right button-primary big" data-caption-animate="fadeInUp" data-caption-delay="250" href="/get_started"><span class="icon icon-xs fa-angle-right"></span>{{.Get `slider_1_button`}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="section-60 section-md-80 section-lg-90 section-xl-bottom-90 bg-whisperapprox novi-background bg-cover">
+            <div class="container">
+                <div style="display: flex; flex-direction: column; align-items: center;">
+                    <div style="border: 2px solid transparent;" style="text-align: center;">
+                        <h3>{{.Get `section_4_title`}}</h3>
+                        <div class="inset-lg-left-0">
+                            <ul class="list-xl">
+                                <li>
+                                    <article class="icon-box-horizontal">
+                                        <div class="unit flex-row unit-spacing-md">
+                                            <div class="unit-body">
+                                                <li style="list-style: square; color: black; font-size: large;"><h5>{{.Get `section_4_subtitle_1`}}</h5></li>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="icon-box-horizontal">
+                                        <div class="unit flex-row unit-spacing-md">
+                                            <div class="unit-body">
+                                                <li style="list-style: square; color: black; font-size: large;"><h5>{{.Get `section_4_subtitle_2`}}</h5></li>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="icon-box-horizontal">
+                                        <div class="unit flex-row unit-spacing-md">
+                                            <div class="unit-body">
+                                                <li style="list-style: square; color: black; font-size: large;"><h5>{{.Get `section_4_subtitle_3`}}</h5></li>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="icon-box-horizontal">
+                                        <div class="unit flex-row unit-spacing-md">
+                                            <div class="unit-body">
+                                                <li style="list-style: square; color: black; font-size: large;"><h5>{{.Get `section_4_subtitle_4`}}</h5></li>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                                <li>
+                                    <article class="icon-box-horizontal">
+                                        <div class="unit flex-row unit-spacing-md">
+                                            <div class="unit-body">
+                                                <li style="list-style: square; color: black; font-size: large;"><h5>{{.Get `section_4_subtitle_5_1`}} "{{.Get `section_4_subtitle_5_2`}}" {{.Get `section_4_subtitle_5_3`}}</h5></li>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section parallax-container bg-black" data-parallax-img="{{$section_3_image}}">
+                <div class="parallax-content">
+                    <div class="section-60 section-md-80 section-lg-90 context-dark section-bordered-inside overlay-8">
+                        <div class="container">
+                            <div class="text-center">
+                                <h3>{{.Get `section_3__title`}}</h3>
+                                <p class="block-centered" style="max-width: 540px;" style="color: white;">{{.Get `section_3_subtitle`}}</p>
+                            </div>
+                            <div class="row row-50">
+                                <div class="col-sm-6 col-lg-4">
+                                    <article class="icon-box-vertical icon-box-vertical-sm">
+                                        <div class="unit flex-column text-center unit-spacing-sm">
+                                            <div class="unit-body">
+                                                <h5>{{.Get `section_3_topLeft_title`}}</h5>
+                                                <p class="text-white-05" style="color: white;">{{.Get `section_3_topLeft_content`}}</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <article class="icon-box-vertical icon-box-vertical-sm">
+                                        <div class="unit flex-column text-center unit-spacing-sm">
+                                            <div class="unit-body">
+                                                <h5>{{.Get `section_3_topCenter_title`}}</h5>
+                                                <p class="text-white-05" style="color: white;">{{.Get `section_3_topCenter_content`}}</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <article class="icon-box-vertical icon-box-vertical-sm">
+                                        <div class="unit flex-column text-center unit-spacing-sm">
+                                            <div class="unit-body">
+                                                <h5>{{.Get `section_3_topRight_title`}}</h5>
+                                                <p class="text-white-05"style="color: white;">{{.Get `section_3_topRight_content`}}</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <article class="icon-box-vertical icon-box-vertical-sm">
+                                        <div class="unit flex-column text-center unit-spacing-sm">
+                                            <div class="unit-body">
+                                                <h5>{{.Get `section_3_bottomLeft_title`}}</h5>
+                                                <p class="text-white-05"style="color: white;">{{.Get `section_3_bottomLeft_content`}}</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <article class="icon-box-vertical icon-box-vertical-sm">
+                                        <div class="unit flex-column text-center unit-spacing-sm">
+                                            <div class="unit-body">
+                                                <h5>{{.Get `section_3_bottomCenter_title`}}</h5>
+                                                <p class="text-white-05"style="color: white;">{{.Get `section_3_bottomCenter_content_1`}} "I'll {{.Get `section_3_bottomCenter_content_2`}}" {{.Get `section_3_bottomCenter_content_3`}}</p>
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-60 section-md-80 section-lg-90 section-lg-top-30 section-lg-bottom-0 novi-background" id="about">
+            <div class="container">
+                <div><div>
+                    <h3 class="mb-30" style="text-align: center;">{{.Get `section_2_title`}}</h3>
+                </div>
+                </div>
+                <div style="text-align: center;"><img src="{{$section_2_image}}" alt="" width="446" height="608"></div>
+                <div>
+                    <div style="color: black;" class="mb-30">
+                        <div>
+                            <p style="font-size: large;">Hi there friend,</p>
+                            <p style="font-size: large;">Bryce and Jaynie here, the dynamic duo behind Holistic Habits Coaching - where we make healthy living actually enjoyable (shocking, we know).</p>
+                            <p style="font-size: large;">First, thank you so much for visiting our site. It means the world to us to be able to share a bit of our story and what we do. Long story short, we were once in the same boat as you. Busy building our careers, neglecting our health, and assuming that anything less than the perfect diet and workout routines wasn't worth the effort. But let's be real, who wants to spend all their free time at the gym when there's Netflix to binge-watch?</p>
+                            <p style="font-size: large;">Eventually, we realized that neglecting our health was hurting us in the long run. So, we dove deep into research and discovered the magic of healthy habits based on solid nutrition principles. And let us tell you, it's been a game-changer. We're looking and feeling better than ever before.</p>
+                            <p style="font-size: large;">After getting our fitness certifications and Jaynie's nursing degree, we created Holistic Habits Coaching to help busy professionals like us. We totally get the struggle of trying to balance work and health, so we focus on helping our clients achieve optimal wellness without sacrificing all their free time.</p>
+                            <p style="font-size: large;">Our coaching isn't just about choking down plain chicken and broccoli (although those can be pretty tasty with the right seasoning). We believe in making healthy living accessible and tailored to each client's unique needs. Plus, we still indulge in cake from time to time (in moderation, of course).</p>
+                            <p style="font-size: large;">We're super passionate about helping others achieve their best selves through sustainable habits and healthy living, and we promise we won't force you to eat dry chicken breast until you cry. So, are you ready to join our squad and level up your health and wellness game? Let's do this thing!</p>
+                            <p style="font-size: large;">Yours truly,</p>
+                            <p style="font-size: large;">Bryce and Jaynie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-60 section-md-80 section-lg-90 section-xl-bottom-90  novi-background bg-cover" style="display: none;">
+            <div class="container">
+                <h3 id="testimonials" style="text-align: center;">{{.Get `section_5_title`}}</h3>
+                <div class="row row-40 row-fix">
+                        <div class="owl-carousel owl-nav-bottom-left" data-items="1" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false" data-nav="true" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                            <div class="item" style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="{{$testimonial_slider_image_1}}" style="max-height: 350px; width: auto;">
+                                <h4 style="text-align: center;">"{{.Get `section_5_testimonial_1`}}"</h4>
+                            </div>
+                            <div class="item" style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="{{$testimonial_slider_image_2}}" style="max-height: 350px; width: auto;">
+                                <h4 style="text-align: center;">"{{.Get `section_5_testimonial_2`}}"</h4>
+                            </div>
+                            <div class="item" style="display: flex; flex-direction: column; align-items: center;">
+                                <img src="{{$testimonial_slider_image_3}}" style="max-height: 350px; width: auto;">
+                                <h4>"{{.Get `section_5_testimonial_3`}}"</h4>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section parallax-container bg-black" data-parallax-img="images/clients-testimonials-parallax-1.jpg">
+                <div class="parallax-content">
+                    <div style="background-color: #050521;">
+                        <div class="container text-center section-60 section-md-80 section-lg-90 section-xl-90">
+                            <h3>{{.Get `section_6_title`}}</h3>
+                            <h4>Elevate Your CORE Habits</h4>
+                            <div class="row row-fix justify-content-lg-center">
+                                <div class="col-lg-11 col-xl-9">
+                                    <div class="owl-carousel-inverse">
+                                        <div class="owl-carousel owl-nav-position-numbering" data-items="1" data-stage-padding="0" data-loop="false" data-margin="30" data-nav="true" data-numbering="#owl-numbering-1" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                                            <div class="item">
+                                                <blockquote class="quote-minimal quote-minimal-inverse">
+                                                    <div style="text-align: left;">
+                                                        <p>The CORE program is our "red carpet fitness experience". We take a foundational approach to fitness by establishing healthy habits based on the principles of nutrition. Everything we do is individualized and tailored to you and your lifestyle because there's no "one size fits all" approach to reaching your health goals. CORE stands for the four phases of our program - Cue, Observe, Repeat, Evaluate.</p>
+                                                        <p>In the Cue phase, we'll help you identify the unhealthy behavior cues that have been holding you back and replace them with effective ones, setting the foundation for sustainable healthy habits that will last a lifetime.</p>
+                                                        <p>During the Observe phase, we closely monitor how these changes are affecting your mood, body, and overall health. We use this information to fine-tune your approach, ensuring you get the most out of your efforts and achieve your goals.</p>
+                                                        <p>The Repeat phase is where the real magic happens. We'll repeat what's working and replace what isn't, ensuring you continue to make progress towards your health goals.</p>
+                                                        <p>Finally, in the Evaluate phase, we take stock of the cumulative benefits and successes you've experienced and set new goals to propel your progress even further. By following this comprehensive framework, you'll not only achieve short-term success but set yourself up for long-term health and wellness.</p>
+                                                    </div>
+                                                    <a class="button button-icon button-icon-right button-primary big" data-caption-animate="fadeInUp" data-caption-delay="250" href="/get_started" style=";"><span class="icon icon-xs fa-angle-right"></span>Unlock Your Potential</a>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section novi-bg novi-bg-img bg-decoration-wrap bg-decoration-bottom section-bottom-60 section-xl-top-90 section-xl-bottom-90 bg-gray-lighter">
+            <div class="container bg-decoration-content">
+                <h3>{{.Get `section_7_title`}}</h3>
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/webnertia/strategy" style="height:630px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget end -->
+            </div>
+            <div class="bg-decoration-object bg-whisper novi-bg novi-bg-img"></div>
+        </section>
+        <section class="section-60 section-md-80 section-lg-90 section-md-bottom-90 bg-default novi-background bg-cover">
+            <div class="container text-center">
+                <h3>{{.Get `section_8_title`}}</h3>
+                <div class="row row-40 row-offset-6 justify-content-sm-center">
+                    <div class="col-sm-8 col-md-5 col-lg-3">
+                        <div class="team-boxed d-xl-inline-block">
+                            <div class="team-boxed-img-wrap"><a href="/get_started"><img src="{{$staff_image_1}}" alt="" width="246" height="190"></a></div>
+                            <div class="team-boxed-caption text-center">
+                                <div class="team-boxed-title font-weight-bold"><a href="/get_started">{{.Get `section_8_nameLeft`}}</a></div>
+                                <p class="position">{{.Get `section_8_titleLeft`}}</p>
+                                <ul class="team_expert mt-20 list-inline-reset">
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-facebook" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-twitter" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-google-plus" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa-pinterest-p fa" href="/get_started"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-5 col-lg-3">
+                        <div class="team-boxed d-xl-inline-block">
+                            <div class="team-boxed-img-wrap"><a href="/get_started"><img src="{{$staff_image_2}}" alt="" width="246" height="190"></a></div>
+                            <div class="team-boxed-caption text-center">
+                                <div class="team-boxed-title font-weight-bold"><a href="/get_started">{{.Get `section_8_nameLeftCenter`}}</a></div>
+                                <p class="position">{{.Get `section_8_titleLeftCenter`}}</p>
+                                <ul class="team_expert mt-20 list-inline-reset">
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-facebook" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-twitter" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-google-plus" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa-pinterest-p fa" href="/get_started"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-5 col-lg-3">
+                        <div class="team-boxed d-xl-inline-block">
+                            <div class="team-boxed-img-wrap"><a href="/get_started"><img src="{{$staff_image_3}}" alt="" width="246" height="190"></a></div>
+                            <div class="team-boxed-caption text-center">
+                                <div class="team-boxed-title font-weight-bold"><a href="/get_started">{{.Get `section_8_nameRightCenter`}}</a></div>
+                                <p class="position">{{.Get `section_8_titleRightCenter`}}</p>
+                                <ul class="team_expert mt-20 list-inline-reset">
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-facebook" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-twitter" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-google-plus" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa-pinterest-p fa" href="/get_started"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-5 col-lg-3">
+                        <div class="team-boxed d-xl-inline-block">
+                            <div class="team-boxed-img-wrap"><a href="/get_started"><img src="{{$staff_image_4}}" alt="" width="246" height="190"></a></div>
+                            <div class="team-boxed-caption text-center">
+                                <div class="team-boxed-title font-weight-bold"><a href="/get_started">{{.Get `section_8_nameRight`}}</a></div>
+                                <p class="position">{{.Get `section_8_titleRight`}}</p>
+                                <ul class="team_expert mt-20 list-inline-reset">
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-facebook" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-twitter" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-google-plus" href="/get_started"></a></li>
+                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa-pinterest-p fa" href="/get_started"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

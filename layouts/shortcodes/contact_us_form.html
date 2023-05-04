@@ -1,0 +1,53 @@
+<!-- Variables -->
+{{ $fitness_banner_image := "/images/fitness banner.jpg" }}
+<!-- Variables end -->
+
+<section class="section-40 section-md-60 section-lg-90 section-xl-120 bg-gray-dark page-title-wrap overlay-5 custom-bg-image" style="background-image: url({{$fitness_banner_image}});">
+    <div class="container">
+        <div class="page-title text-center">
+            <h2>{{.Get `get_started_section_1_title`}}</h2>
+            <h3>{{.Get `get_started_section_1_subtitle`}}</h3>
+            <h4>{{.Get `get_started_section_1_subtitle2`}}</h4>
+        </div>
+    </div>
+</section>
+
+<section class="section-60 section-md-top-90 section-md-bottom-100 novi-background bg-whisperapprox bg-cover">
+    <div class="container">
+        <div class="row row-50 row-fix justify-content-lg-between">
+            <h3>{{.Get `get_started_section_2_title`}}</h3>
+            <div class="col-lg-5 col-xl-4">
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/webnertia/strategy" style="height:630px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget end -->
+            </div>
+            <div class="col-lg-7 col-xl-7">
+                <h3>{{.Get `form_header`}}</h3>
+                <form name="contact-us-fitness-demo" action="/confirmation" method="post" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact-us-fitness-demo">
+                    <div class="row row-30">
+                        <div class="col-md-6">
+                            <div class="form-wrap"><input class="form-input" id="first-name" type="text" name="first-name" required><label class="form-label" for="first-name">First Name</label></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-wrap"><input class="form-input" id="last-name" type="text" name="last-name" required><label class="form-label" for="last-name">Last Name</label></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-wrap"><input class="form-input" id="email" type="email" name="email" required><label class="form-label" for="email">Email</label></div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-wrap"><input class="form-input" id="phone" type="tel" name="phone" required minlength="10"><label class="form-label" for="phone">Phone</label></div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-wrap"><textarea class="form-input" id="message" name="message" required></textarea><label class="form-label" for="message">How Can I Help?</label></div>
+                        </div>
+                    </div>
+                    <div class="row row-offset-5">
+                        <div class="col-md-6"><button class="button button-ebony-clay-outline button-block" type="submit">Send</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

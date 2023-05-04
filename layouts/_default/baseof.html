@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+    <head>
+        {{ $title := site.Title }}
+            {{ if not .IsHome }}
+                {{ $title = printf "%s | %s" .Title site.Title }}
+            {{ end }}
+        <title>{{ $title }}</title>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <link rel="icon" href="/images/favicon.png" type="png">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Arvo:400,700%7COpen+Sans:300,300italic,400,400italic,700italic,800%7CUbuntu:500">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <!--[if lt IE 10]><div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="httpqwertywindows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div><script src="js/html5shiv.min.js"></script><![endif]-->
+    </head>
+
+<!-- Variables -->
+{{ $address := "Join Our Free CORE Fat Loss Secrets Community" }}
+{{ $hours := "Your Hours of Operation Go Here" }}
+{{ $phone := "Your Business Phone Goes Here" }}
+{{ $email := "Your Email Goes Here" }}
+{{ $left_paragraph_footer := "We are determined to help you reach your fitness goals." }}
+{{ $free_consultation_footer := "Free Consultation" }}
+{{ $recent_posts_footer := "RECENT POSTS" }}
+{{ $quick_links_footer := "QUICK LINKS" }}
+{{ $contact_us_footer := "CONTACT US" }}
+{{ $home_footer := "Home" }}
+{{ $services_footer := "Services" }}
+{{ $blog_footer := "Blog" }}
+{{ $about_us_footer := "About Us" }}
+{{ $members_footer := "Members" }}
+{{ $schedule_footer := "Schedule" }}
+{{ $follow_us_footer := "Follow Us:" }}
+{{ $gym_logo := "Your Gym's Logo" }}
+{{$gym_name := "Your Gym's Name"}}
+{{$blog_post_image_1 := "/images/testimonials 1.jpg"}}
+{{$blog_post_image_2 := "/images/testimonials 3.jpg"}}
+<!-- Variables end -->
+
+    <body>
+        <div class="page">
+            <div class="page-loader page-loader-variant-1">
+                <div>
+                    <div class="page-loader-body">
+                        <div id="spinningSquaresG">
+                            <div class="spinningSquaresG" id="spinningSquaresG_1"></div>
+                            <div class="spinningSquaresG" id="spinningSquaresG_2"></div>
+                            <div class="spinningSquaresG" id="spinningSquaresG_3"></div>
+                            <div class="spinningSquaresG" id="spinningSquaresG_4"></div>
+                            <div class="spinningSquaresG" id="spinningSquaresG_5"></div>
+                            <div class="spinningSquaresG" id="spinningSquaresG_6"></div>
+                            <div class="spinningSquaresG" id="spinningSquaresG_7"></div>
+                            <div class="spinningSquaresG" id="spinningSquaresG_8"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header class="page-head">
+                <div class="rd-navbar-wrap">
+                    <nav class="rd-navbar rd-navbar-corporate-light" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="53px" data-xl-stick-up-offset="53px" data-xxl-stick-up-offset="53px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                        <div class="bg-ebony-clay context-dark novi-background bg-cover">
+                            <div class="rd-navbar-inner">
+                                <div class="rd-navbar-aside-wrap">
+                                    <div class="rd-navbar-aside">
+                                        <div class="rd-navbar-aside-toggle" data-rd-navbar-toggle=".rd-navbar-aside"><span></span></div>
+                                        <div class="rd-navbar-aside-content">
+                                            <ul class="rd-navbar-aside-group list-units">
+                                                <li>
+                                                    <div class="unit flex-row unit-spacing-xs align-items-center">
+                                                        <div class="unit-left" style="display: none"><span class="novi-icon icon icon-xxs icon-primary fa-map-marker"></span></div>
+                                                        <div class="unit-body"><a class="link-secondary" href="https://www.facebook.com/groups/corefatlosssecrets" target="_blank">{{$address}}</a></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="unit flex-row unit-spacing-xs align-items-center">
+                                                        <div class="unit-left" style="display: none"><span class="novi-icon icon icon-xxs icon-primary fa-clock-o"></span></div>
+                                                        <div class="unit-body" style="display: none";><span class="time">{{$hours}}</span></div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="unit flex-row unit-spacing-xs align-items-center">
+                                                        <div class="unit-left" style="display: none"><span class="novi-icon icon icon-xxs icon-primary fa-phone"></span></div>
+                                                        <div class="unit-body" style="display: none"><a class="link-secondary" href="tel:{{$phone}}">{{$phone}}</a></div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="rd-navbar-aside-group">
+                                                <ul class="list-inline list-inline-reset">
+                                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-facebook" href="https://www.facebook.com/bryce.hamilton.92" target="_blank"></a></li>
+                                                    <li style="display: none;"><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-twitter" href="/get_started"></a></li>
+                                                    <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-instagram" href="https://www.instagram.com/holistic.habits.coaching/" target="_blank"></a></li>
+                                                    <li style="display: none;"><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa-pinterest-p fa" href="/get_started"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="novi-background bg-cover">
+                            <div class="rd-navbar-inner">
+                                <div class="rd-navbar-group">
+                                    <div class="rd-navbar-panel"><button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button><a class="rd-navbar-brand brand" href="/"><img src="/images/logo.svg" alt="Holistic Habits Logo" width="230" height="49"></a></div>
+                                    <div class="rd-navbar-group-asside">
+                                        <div class="rd-navbar-nav-wrap">
+                                            <div class="rd-navbar-nav-inner">
+                                                <ul class="rd-navbar-nav">
+                                                    <li><a href="/">Home</a>
+                                                    </li>
+                                                    <li><a href="/#about">About us</a></li>
+                                                    <li class="rd-navbar--has-dropdown rd-navbar-submenu" style="display: none";><a href="/get_started">Services</a>
+                                                        <ul class="rd-navbar-dropdown">
+                                                            <li><a href="/get_started">Your Services</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="rd-navbar--has-dropdown" style="display: none;"><a href="/get_started">Blog</a>
+                                                    </li>
+                                                    <li class="rd-navbar--has-dropdown" style="display: none;"><a href="/get_started">Pages</a>
+                                                    </li>
+                                                    <li><a href="/get_started">Schedule An Assessment</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <main>
+                {{ block "main" . }}{{ end }}
+            </main>
+
+            <footer class="page-foot bg-ebony-clay context-dark novi-background bg-cover">
+                <div class="section-50 section-md-75">
+                    <div class="container">
+                        <div class="row row-fix justify-content-sm-center">
+                            <div class="col-sm-9 col-md-11 col-xl-12">
+                                <div class="row row-50">
+                                    <div class="col-md-6 col-lg-10 col-xl-3">
+                                        <div class="inset-xl-right-20" style="max-width: 510px;"><a class="brand brand-inverse" href="/"><h4 style="background-color: var(--originalGold-color); color: white;">{{$gym_logo}}</h4></a>
+                                            <p class="text-shuttle-gray">{{$left_paragraph_footer}}</p><a class="link link-group link-group-animated link-bold link-white" href="/get_started"><span>{{$free_consultation_footer}}</span><span class="icon icon-xxs icon-primary fa fa-angle-right"></span></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3 footer-post">
+                                        <h6 class="text-uppercase">{{$recent_posts_footer}}</h6>
+                                        <div class="post post-preview post-preview-inverse"><a href="/get_started">
+                                                <div class="unit flex-row unit-spacing-lg">
+                                                    <div class="unit-left">
+                                                        <div class="post-image"><img src="{{$blog_post_image_1}}" alt="" width="70" height="70"></div>
+                                                    </div>
+                                                    <div class="unit-body">
+                                                        <div class="post-header">
+                                                            <p>Recent Blog Post</p>
+                                                        </div>
+                                                        <div class="post-meta">
+                                                            <ul class="list-meta">
+                                                                <li><time datetime="2018-02-04">July 4, 2022</time></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                        <div class="post post-preview post-preview-inverse"><a href="/get_started">
+                                                <div class="unit flex-row unit-spacing-lg">
+                                                    <div class="unit-left">
+                                                        <div class="post-image"><img src="{{$blog_post_image_2}}" alt="" width="70" height="70"></div>
+                                                    </div>
+                                                    <div class="unit-body">
+                                                        <div class="post-header">
+                                                            <p>Blog Post #2</p>
+                                                        </div>
+                                                        <div class="post-meta">
+                                                            <ul class="list-meta">
+                                                                <li><time datetime="2018-02-04">July 4, 2022</time></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a></div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <h6 class="text-uppercase">{{$quick_links_footer}}</h6>
+                                        <div class="row row-fix" style="max-width: 270px;">
+                                            <div class="col-6">
+                                                <ul class="list-marked-variant-2">
+                                                    <li><a href="/">{{$home_footer}}</a></li>
+                                                    <li><a href="/get_started">{{$services_footer}}</a></li>
+                                                    <li><a href="/get_started">{{$blog_footer}}</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-6">
+                                                <ul class="list-marked-variant-2">
+                                                    <li><a href="/get_started">{{$about_us_footer}}</a></li>
+                                                    <li><a href="/get_started">{{$members_footer}}</a></li>
+                                                    <li><a href="/get_started">{{$schedule_footer}}</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <h6 class="text-uppercase">{{$contact_us_footer}}</h6><address class="contact-info text-left">
+                                            <div class="unit flex-row unit-spacing-md align-items-center">
+                                                <div class="unit-left"><span class="novi-icon icon icon-xs text-shuttle-gray fa-phone"></span></div>
+                                                <div class="unit-body"><a class="link-white" href="tel:#">{{$phone}}</a></div>
+                                            </div>
+                                            <div class="unit flex-row unit-spacing-md align-items-center">
+                                                <div class="unit-left"><span class="novi-icon icon icon-xs text-shuttle-gray fa fa-envelope-o"></span></div>
+                                                <div class="unit-body"><a class="link-white" href="mailto:#">{{$email}}</a></div>
+                                            </div>
+                                            <div class="unit flex-row unit-spacing-md">
+                                                <div class="unit-left"><span class="novi-icon icon icon-xs text-shuttle-gray fa-map-marker"></span></div>
+                                                <div class="unit-body"><a class="link-white d-inline" href="/get_started">{{$address}}</a></div>
+                                            </div>
+                                        </address>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <hr>
+                </div>
+                <div class="page-foot section section-35 bg-ebony-clay context-dark">
+                    <div class="container text-center">
+                        <div class="row row-fix row-15 flex-row-md-reverse justify-content-md-between align-items-md-center">
+                            <div class="col-md-6 text-md-right">
+                                <div class="group-sm group-middle">
+                                    <p class="font-italic text-white">{{$follow_us_footer}}</p>
+                                    <ul class="list-inline list-inline-reset">
+                                        <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-facebook" href="/get_started"></a></li>
+                                        <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-twitter" href="/get_started"></a></li>
+                                        <li><a class="novi-icon icon icon-round icon-pciked-bluewood icon-xxs-smallest fa fa-google-plus" href="/get_started"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-md-left">
+                                <p class="copy-text">© {{ .Date.Format "2006" }} <strong style="color: #00A9F5;">{{$gym_name}}</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="/js/core.min.js"></script>
+        <script src="/js/script.js"></script>
+    </body>
+</html>
