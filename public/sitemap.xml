@@ -2,17 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://fitness.webnertia.com/confirmation/</loc>
-    <lastmod>2022-09-06T11:59:31-04:00</lastmod>
+    <loc>https://holistichabits.fit/terms_conditions/</loc>
+    <lastmod>2023-05-10T16:14:20-04:00</lastmod>
   </url><url>
-    <loc>https://fitness.webnertia.com/get_started/</loc>
-    <lastmod>2022-08-09T15:43:40-04:00</lastmod>
+    <loc>https://holistichabits.fit/privacy_policy/</loc>
+    <lastmod>2023-05-10T15:10:27-04:00</lastmod>
   </url><url>
-    <loc>https://fitness.webnertia.com/</loc>
-    <lastmod>2022-08-09T09:26:06-04:00</lastmod>
+    <loc>https://holistichabits.fit/disclaimer/</loc>
+    <lastmod>2023-05-10T10:11:46-04:00</lastmod>
   </url><url>
-    <loc>https://fitness.webnertia.com/categories/</loc>
+    <loc>https://holistichabits.fit/members/</loc>
+    <lastmod>2023-05-10T09:20:34-04:00</lastmod>
   </url><url>
-    <loc>https://fitness.webnertia.com/tags/</loc>
+    <loc>https://holistichabits.fit/free_resources/</loc>
+    <lastmod>2023-05-10T07:57:09-04:00</lastmod>
+  </url><url>
+    <loc>https://holistichabits.fit/free_assessment/</loc>
+    <lastmod>2023-05-10T07:27:27-04:00</lastmod>
+  </url><url>
+    <loc>https://holistichabits.fit/unlocking_the_power_of_a_nutritional_plan/</loc>
+    <lastmod>2023-05-08T18:38:01-04:00</lastmod>
+  </url><url>
+    <loc>https://holistichabits.fit/blog/</loc>
+    <lastmod>2023-05-08T16:36:17-04:00</lastmod>
+  </url><url>
+    <loc>https://holistichabits.fit/</loc>
+    <lastmod>2023-05-08T16:05:35-04:00</lastmod>
+  </url><url>
+    <loc>https://holistichabits.fit/categories/</loc>
+  </url><url>
+    <loc>https://holistichabits.fit/tags/</loc>
   </url>
 </urlset>

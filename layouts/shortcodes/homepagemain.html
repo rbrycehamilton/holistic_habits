@@ -15,7 +15,7 @@
 
 <section>
         <section>
-            <div class="swiper-container swiper-variant-1 bg-black">
+            <div class="swiper-container bg-black">
                 <div class="swiper-wrapper text-center">
                     <div class="swiper-slide overlay-5" data-slide-bg="{{$slider_1_image}}">
                         <div class="swiper-slide-caption">
@@ -23,7 +23,7 @@
                                 <div class="row row-fix justify-content-md-center">
                                     <div class="col-md-11 col-lg-10 col-xl-9">
                                         <div class="shilder-header-with-divider" data-caption-animate="fadeInUp" data-caption-delay="0s">{{.Get `slider_1_text`}}</div>
-                                        <h2 class="slider-header" data-caption-animate="fadeInUp" data-caption-delay="100s">{{.Get `slider_1_text_2`}}<br>{{.Get `slider_1_text_3`}}</h2><a class="button button-icon button-icon-right button-primary big" data-caption-animate="fadeInUp" data-caption-delay="250" href="/get_started"><span class="icon icon-xs fa-angle-right"></span>{{.Get `slider_1_button`}}</a>
+                                        <h2 class="slider-header" data-caption-animate="fadeInUp" data-caption-delay="100s">{{.Get `slider_1_text_2`}}<br>{{.Get `slider_1_text_3`}}</h2><a class="button button-icon button-icon-right button-primary big" data-caption-animate="fadeInUp" data-caption-delay="250" href="/free_resources"><span class="icon icon-xs fa-angle-right"></span>{{.Get `slider_1_button`}}</a>
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +202,7 @@
             </div>
         </section>
         <section>
-            <div class="section parallax-container bg-black" data-parallax-img="images/clients-testimonials-parallax-1.jpg">
+            <div class="section parallax-container bg-black" data-parallax-img="images/clients-testimonials-parallax-1.jpg" id="program">
                 <div class="parallax-content">
                     <div style="background-color: #050521;">
                         <div class="container text-center section-60 section-md-80 section-lg-90 section-xl-90">
@@ -221,7 +221,7 @@
                                                         <p>The Repeat phase is where the real magic happens. We'll repeat what's working and replace what isn't, ensuring you continue to make progress towards your health goals.</p>
                                                         <p>Finally, in the Evaluate phase, we take stock of the cumulative benefits and successes you've experienced and set new goals to propel your progress even further. By following this comprehensive framework, you'll not only achieve short-term success but set yourself up for long-term health and wellness.</p>
                                                     </div>
-                                                    <a class="button button-icon button-icon-right button-primary big" data-caption-animate="fadeInUp" data-caption-delay="250" href="/get_started" style=";"><span class="icon icon-xs fa-angle-right"></span>Unlock Your Potential</a>
+                                                    <a class="button button-icon button-icon-right button-primary big" data-caption-animate="fadeInUp" data-caption-delay="250" href="/free_assessment"><span class="icon icon-xs fa-angle-right"></span>Unlock Your Potential</a>
                                                 </blockquote>
                                             </div>
                                         </div>
@@ -233,17 +233,12 @@
                 </div>
             </div>
         </section>
-        <section class="section novi-bg novi-bg-img bg-decoration-wrap bg-decoration-bottom section-bottom-60 section-xl-top-90 section-xl-bottom-90 bg-gray-lighter">
-            <div class="container bg-decoration-content">
-                <h3>{{.Get `section_7_title`}}</h3>
-                <!-- Calendly inline widget begin -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/webnertia/strategy" style="height:630px;"></div>
-                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                <!-- Calendly inline widget end -->
+        <section>
+            <div class="section-60 section-md-80 section-lg-90 section-lg-top-15 section-lg-bottom-15 novi-background" style="text-align: center;">
+                <a href="/free_resources"><img src="/images/freeresourceclaim.jpg" alt="" width="971" height="649"></a>
             </div>
-            <div class="bg-decoration-object bg-whisper novi-bg novi-bg-img"></div>
         </section>
-        <section class="section-60 section-md-80 section-lg-90 section-md-bottom-90 bg-default novi-background bg-cover">
+        <section class="section-60 section-md-80 section-lg-90 section-md-bottom-90 bg-default novi-background bg-cover" style="display: none;">
             <div class="container text-center">
                 <h3>{{.Get `section_8_title`}}</h3>
                 <div class="row row-40 row-offset-6 justify-content-sm-center">

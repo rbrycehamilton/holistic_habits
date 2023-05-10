@@ -1,6 +1,6 @@
 ---
 title: "Home"
-date: 2022-08-09T09:26:06-04:00
+date: 2023-05-08T16:05:35-04:00
 draft: true
 ---
 {{< homepagemain
@@ -8,7 +8,7 @@ draft: true
 slider_1_text="Transform Your Health, One Habit At A Time"
 slider_1_text_2="Do more than achieve your goals. Thrive in them!"
 slider_1_text_3=""
-slider_1_button="Access Our Free Eating On-the-Go Guide"
+slider_1_button="Access Your Free Healthy Meal Plan (One Full Week!!)"
 
 slider_2_text="We Believe That Stronger Bodies" 
 slider_2_text_2="Provide A Better Quality Of Life"
