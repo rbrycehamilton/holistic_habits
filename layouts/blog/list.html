@@ -1,0 +1,42 @@
+{{ define "main" }}
+    <!-- Variables -->
+    {{ $fitness_banner_image := "/images/fitness banner.jpg" }}
+    <!-- Variables end -->
+    <section class="section-40 section-md-60 section-lg-90 section-xl-120 bg-gray-dark page-title-wrap overlay-5 custom-bg-image" style="background-image: url({{$fitness_banner_image}});">
+       <div class="container">
+           <div class="page-title text-center">
+               <h2>Welcome to the Blog</h2>
+           </div>
+       </div>
+    </section>
+        <div class="section-50 section-md-75 section-xl-100 novi-background bg-cover bg-default">
+            <div class="container">
+                <div class="row row-fix justify-content-md-center">
+                    <div class="col-xl-10 post-classic-wrap">
+                    {{ range (.Site.GetPage "section" "blog").Paginator.Pages }}
+                        <article class="post-classic">
+                            <div class="post-media">
+                                <figure><a href="{{.Permalink}}"><img src="{{ .Params.image }}" alt="" width="971" height="649"></a></figure>
+                            </div>
+                            <div class="post-main">
+                                <div class="post-info"><img src="/images/blogshot.jpg" alt="" width="113" height="113">
+                                    <h6 class="post-author">{{ .Params.author }}</h6>
+                                </div>
+                                <div class="post-body" style="color: rgba(0, 0, 0, 0.5);">
+                                    <h4><a href="{{.Permalink}}">{{ .Params.title }}</a></h4>
+                                    <p class="text-gray-05">{{ truncate 600 .Content }}</p>
+                                    <div class="post-footer">
+                                        <ul class="post-meta">
+                                            <li class="object-inline"><span class="icon novi-icon icon-xxs icon-black material-icons-event"></span><time class="text-gray-05" datetime="2018-06-17">{{ .Date.Format "January 2, 2006" }}</time></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    {{ end }}
+                    {{ partial "paginator" . }}
+                    </div>
+                </div>
+            </div>
+        </div>
+{{ end }}

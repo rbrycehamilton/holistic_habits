@@ -1,3 +1,4 @@
 baseURL = 'https://holistichabits.fit/'
 languageCode = 'en-us'
 title = 'Holistic Habits Coaching'
+paginate = 4

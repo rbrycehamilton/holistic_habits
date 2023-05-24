@@ -155,40 +155,25 @@
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3 footer-post">
                                         <h6 class="text-uppercase">{{$recent_posts_footer}}</h6>
-                                        <div class="post post-preview post-preview-inverse"><a href="/the_cure_for_modern_life">
-                                            <div class="unit flex-row unit-spacing-lg">
-                                                <div class="unit-left">
-                                                    <div class="post-image"><img src="{{$blog_post_image_2}}" alt="" width="70" height="70"></div>
-                                                </div>
-                                                <div class="unit-body">
-                                                    <div class="post-header">
-                                                        <p>The Cure for Modern Life</p>
-                                                    </div>
-                                                    <div class="post-meta">
-                                                        <ul class="list-meta">
-                                                            <li><time datetime="2018-02-04">May 16, 2023</time></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a></div>
-                                        <div class="post post-preview post-preview-inverse"><a href="/unlocking_the_power_of_a_nutritional_plan">
+                                        {{ range first 2 (.Site.GetPage "section" "blog").Pages }}
+                                            <div class="post post-preview post-preview-inverse"><a href="{{.Permalink}}">
                                                 <div class="unit flex-row unit-spacing-lg">
                                                     <div class="unit-left">
-                                                        <div class="post-image"><img src="{{$blog_post_image_1}}" alt="" width="70" height="70"></div>
+                                                        <div class="post-image"><img src="{{.Params.image}}" alt="" width="70" height="70"></div>
                                                     </div>
                                                     <div class="unit-body">
                                                         <div class="post-header">
-                                                            <p>Unlocking the Power of a Nutritional Plan</p>
+                                                            <p>{{.Title}}</p>
                                                         </div>
                                                         <div class="post-meta">
                                                             <ul class="list-meta">
-                                                                <li><time datetime="2018-02-04">May 8, 2023</time></li>
+                                                                <li><time datetime="2018-02-04">{{ .Date.Format "January 2, 2006" }}</time></li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </a></div>
+                                        {{end}}
                                     </div>
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <h6 class="text-uppercase">{{$quick_links_footer}}</h6>
