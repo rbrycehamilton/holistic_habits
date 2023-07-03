@@ -1,6 +1,6 @@
 ---
 title: "Your Blueprint to Losing Weight, Feeling Good, and Looking Great in Your Skin"
-date: 2023-05-31T06:11:31-04:00
+date: 2023-07-02T06:11:31-04:00
 draft: true
 image: "/images/blogphoto4.jpg"
 author: Bryce Hamilton
