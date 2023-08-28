@@ -6,7 +6,7 @@ draft: true
 {{< homepagemain
 
 slider_1_text="Transform Your Health, One Habit At A Time"
-slider_1_text_2="Do more than achieve your goals. Thrive in them!"
+slider_1_text_2="We help liberate restrictive dieters from the quick-fix grind so they can finally achieve mind-blowing results and never diet again."
 slider_1_text_3=""
 slider_1_button="Access Your Free Healthy Meal Plan (One Full Week!!)"
 
